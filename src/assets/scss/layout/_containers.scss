@@ -1,0 +1,12 @@
+.center_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .m-children {
+    & > *:not(:first-child) {
+      margin-top: 20px;
+    }
+  }

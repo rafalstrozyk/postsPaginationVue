@@ -1,0 +1,34 @@
+.pagination {
+  list-style-type: none;
+
+  & > *:not(:last-child) {
+    margin-right: 0.8rem;
+  }
+
+  &-item {
+    display: inline-block;
+    button {
+      padding: 1rem;
+      background-color: var(--color-green);
+      border-radius: 20px;
+      font-size: 1.4rem;
+      color: var(--color-beige-dark);
+      transition: all 0.3s;
+
+      &:disabled {
+        cursor: default;
+        background-color: var(--color-beige-light);
+        color: var(--color-beige-dark);
+      }
+
+      &:hover {
+        background-color: var(--color-beige-light);
+        color: var(--color-green);
+      }
+    }
+  }
+  .active {
+    background-color: var(--color-beige);
+    color: var(--color-green);
+  }
+}

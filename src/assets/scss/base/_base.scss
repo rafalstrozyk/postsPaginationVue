@@ -1,0 +1,71 @@
+// css reset
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html {
+  font-size: var(--font-size-normal); //10px
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: var(--font-size-bit);
+  }
+}
+@media only screen and (max-width: 625px) {
+  html {
+    font-size: var(--font-size-small);
+  }
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.6rem;
+  color: var(--color-green);
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-weight: 300;
+  border: none;
+  background: transparent;
+}
